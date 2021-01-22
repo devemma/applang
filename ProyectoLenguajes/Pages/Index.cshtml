@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="jumbotron">
+    <h1 class="display-3">
+        ¡Hola, bienvenido al sitio!
+        <a asp-page="/Index">
+            <img src="~/img/lang.png" alt="" width="160" height="160" class="rounded float-end">
+        </a>
+    </h1>
+    <p class="lead">En este sitio tendrás información de mucha utilidad para tu aprendizaje del idioma inglés.</p>
+    <hr class="my-4">
+    <p>Se hizo una selección de buenos sitios con herramientas y recursos para aprender inglés.</p>
+    
+    <p class="lead">
+        <a class="btn btn-warning btn-lg" asp-page="Herramientas" role="button">Accede ya al contenido</a>
+    </p>
+</div>
+
+<div class="progress">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+</div>
+
+<h3>
+    Where to begin?!
+    <small class="text-muted">  ¡¿Por dónde comenzar?!</small>
+</h3>
+<p class="lead">Aquí algunos videos de políglotas y gente conocedora del tema:</p>
+
+<p class="lead">
+    <a class="btn btn-warning btn-info" asp-page="Info" role="button">Let's go!</a>
+</p>
+
